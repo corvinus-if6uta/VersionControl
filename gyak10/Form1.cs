@@ -29,9 +29,13 @@ namespace gyak10
             this.Controls.Add(ga);
 
 
-            
 
-            // gc.AddPlayer();
+            for (int i = 0; i < populationSize; i++)
+            {
+                gc.AddPlayer(nbrOfSteps);
+            }
+
+
              gc.Start();
         }
     }
